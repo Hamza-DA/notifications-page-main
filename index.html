@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="main">
 
 <head>
   <meta charset="UTF-8">
@@ -27,14 +27,14 @@
 </head>
 
 <body class="font-body bg-very-light-grayish-blue">
-  <div class="max-w-[710px] px-6 mx-auto bg-white rounded-xl shadow-xl shadow-light-grayish-blue-1 my-10">
+  <main class="max-w-[710px] px-6 mx-auto bg-white rounded-xl shadow-xl shadow-light-grayish-blue-1 my-10">
 
-    <div class="flex items-center justify-between py-6">
-      <h4 id="notificationHeader" class="text-very-dark-blue text-xl font-extrabold">Notifications<span id="unreadCount"
-          class="bg-blue px-3 py-0.5 ml-2 text-base rounded-md text-white">0</span></h4>
+    <div role="banner" class="flex items-center justify-between py-6">
+      <h1 id="notificationHeader" class="text-very-dark-blue text-xl font-extrabold">Notifications<span id="unreadCount"
+          class="bg-blue px-3 py-0.5 ml-2 text-base rounded-md text-white">0</span></h1>
       <button id="readButton" class="text-sm text-dark-grayish-blue hover:text-blue">Mark all as read</button>
     </div>
-    <div class=" flex flex-col gap-4">
+    <div role="main" class=" flex flex-col gap-4">
 
       <div class="notification flex flex-row gap-4 p-4 rounded-xl unread">
         <div class="overflow-hidden rounded-full h-10 w-10 shrink-0">
@@ -140,9 +140,9 @@
       </div>
 
     </div>
-  </div>
+  </main>
 
-  <div class="attribution">
+  <div role="contentinfo" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/Hamza-DA">Hamza Dahmani</a>.
   </div>

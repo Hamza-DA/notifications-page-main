@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .unread{
+        @apply bg-very-light-grayish-blue transition;
+    }
+    .unread .notification-message::after{
+        @apply transition content-['']  rounded-full ml-2 mb-0.5 inline-block w-2 h-2 bg-red;
+    }
+}
